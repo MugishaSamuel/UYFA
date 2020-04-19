@@ -1,0 +1,41 @@
+/* --------------------------------------------------------------------
+    Copyright (c) Demosphere International Inc.
+    No permission is granted for any purpose without prior
+    written consent from Demosphere International Inc.
+-----------------------------------------------------------------------*/
+
+body .dii-action-icon,
+body .dii-action-icon-text,
+body .dii-action-text,
+body .dii-function-icon,
+body .dii-function-icon-text,
+body .dii-function-icon-text-big,
+body .dii-function-text,
+body .dii-function-text-big { height: initial; box-sizing: content-box; }
+body .dii-action-icon-text div { top: 0; }
+
+#dii-navbar-load { line-height: 1.1; }
+#dii-navbar-load .btn { font-size: 12px; }
+
+#dii-navbar-load *,
+body .dii-main-title,
+body .dii-main-title-icon,
+body .dii-container *,
+body .ui-dialog,
+body .ui-dialog *,
+body .dii-ss-rb-container,
+body .dii-ss-rb-container *,
+div#dii-orphans-container * { box-sizing: content-box; }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 { margin-bottom: 0; margin-top: 0; font-family: inherit; font-weight: inherit; font-size: inherit; }
+
+label { font-weight: initial; }
+input[type='checkbox'],
+input[type='radio'] { margin: initial; }
+
+.caret { border: 0 none; }

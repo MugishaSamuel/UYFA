@@ -1,0 +1,110 @@
+/* ----------------------------------------------------------------
+    Copyright (c) Demosphere International Inc.
+    No permission is granted for any purpose without prior
+    written consent from Demosphere International Inc.
+-------------------------------------------------------------------*/
+
+/* General Content Styling
+-----------------------------------------------*/
+.design-table { line-height: 1; }
+.dii-content { min-height: 16px; margin: 0; position: relative; background-color: #fff; padding: 6px; color: #333; }
+.dii-content::after { content: ''; clear: both; display: table; }
+.dii-content-title,
+.dii-content-title > a { font-size: 18px; font-weight: bold; }
+.dii-content:not(.dii-content-header) h2 { margin-top: 10px; font-size: 18px; font-weight: bold; }
+.dii-disable-link { pointer-events: none; cursor: default}
+a.dii-disable-link:active,
+a.dii-disable-link:hover { cursor: default}
+
+/* Content: Link View (regardless of content type)
+-----------------------------------------------*/
+.dii-content-linkview { padding: 0; }
+.dii-content-linkview > a { position: relative; display: block; padding: 6px 28px 6px 6px; font-size: 12px; font-weight: bold; cursor: pointer; }
+.dii-content-linkview .fa-external-link { position: absolute; right: 10px; }
+.dii-content-linkview img { display: none !important; max-height: 50px; }
+
+.dii-content-linkview.dii-content-example > div { width: 250px; margin: 20px; border: 1px dotted rgba(0, 0, 0, 0.1); padding: 8px; }
+
+/* Content: Article, Event & Image
+-----------------------------------------------*/
+.dii-content-article h3,
+.dii-content-event h3 { padding: 4px 8px 0; color: #444; }
+.dii-content-story { margin-top: 6px; border-top: 1px solid #e9e9e9; padding-top: 6px; }
+.dii-content-story,
+.dii-content-story * { line-height: 1.3em; }
+.dii-content-title-photo { margin-top: 6px; border-top: 1px solid #e9e9e9; padding-top: 6px; text-align: center; }
+.dii-content-title-photo img { max-width: 100%; max-height: 300px; }
+
+.dii-content-continue { margin-bottom: 4px; text-align: right; clear: both}
+.dii-content-continue a::before { content: '[+] '; }
+.dii-content-continue a::after { content: 'Read more'; }
+
+.dii-content-event { margin-top: 4px; padding: 8px; }
+
+.dii-content-article > .dii-content-story h1,
+.dii-content-event > .dii-content-story h1 { display: block; font-size: 2em; margin: 0.67em 0 0.67em; font-weight: bold; }
+
+.dii-content-article > .dii-content-story h2,
+.dii-content-event > .dii-content-story h2 { display: block; font-size: 1.5em; margin: 0.83em 0 0.83em; font-weight: bold; }
+
+.dii-content-article > .dii-content-story h3,
+.dii-content-event > .dii-content-story h3 { display: block; font-size: 1.17em; margin: 1em 0 1em; font-weight: bold; }
+
+.dii-content-article > .dii-content-story h4,
+.dii-content-event > .dii-content-story h4 { display: block; margin: 1.33em 0 1.33em; font-weight: bold; }
+
+.dii-content-article > .dii-content-story h5,
+.dii-content-event > .dii-content-story h5 { display: block; font-size: .83em; margin: 1.67em 0 1.67em; font-weight: bold; }
+
+.dii-content-article > .dii-content-story h6,
+.dii-content-event > .dii-content-story h6 { display: block; font-size: .67em; margin: 2.33em 0 2.33em; font-weight: bold; }
+
+.dii-content-article > .dii-content-story span a,
+.dii-content-event > .dii-content-story span a { font-size: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; }
+
+.dii-content-article > .dii-content-story table,
+.dii-content-event > .dii-content-story table { border-collapse: separate; margin: auto; }
+
+@media screen and (max-width: 800px) {
+	.dii-content-story img {
+		height: auto !important;
+		width: 100% !important;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+  .dii-content-story { overflow-x: auto; }
+}
+
+/* Content: Calendar
+-----------------------------------------------*/
+#dii-full-calendar { margin: 6px 28px; }
+.dii-content-calendar > h2 { margin-bottom: 8px; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; }
+.dii-content-calendar .dii-calendar-wall table td { padding: 0; }
+.dii-content-calendar .dii-calendar-wall table.fc-header td.fc-header-left span.fc-button { margin-bottom: 2px; }
+.dii-content-calendar .dii-calendar-wall table.fc-header td.fc-header-right span.fc-header-title h2 { padding: 4px; font-size: 14px; }
+
+.dii-calendar-upcoming-events li { margin-bottom: 4px; border-bottom: 1px dotted #e9e9e9; padding-bottom: 4px; }
+.dii-calendar-upcoming-events li h4 { padding-bottom: 2px; font-weight: normal; }
+.dii-calendar-upcoming-events li h3 a { display: block; padding: 4px 8px; }
+
+.dii-content-calendar .fc-day.ui-state-error,
+.dii-content-calendar .fc-event{cursor: pointer}
+
+/* Content: Rawcode
+-----------------------------------------------*/
+.dii-content-rawcode > iframe { padding: 0; }
+
+/* Content: Rotator
+-----------------------------------------------*/
+.dii-content-rotator > h2 { margin-bottom: 8px; }
+.dii-rotator-caption-summary { max-height: 40px; overflow: hidden; }
+
+/* Content: Section Header
+-----------------------------------------------*/
+.dii-content-header { margin: 8px; }
+
+/* Elements page
+-----------------------------------------------*/
+#iframe-dii-element-wrapper { width: 100%; overflow: auto; -webkit-overflow-scrolling: touch; }
+#iframe-dii-element { width: 100%; -webkit-overflow-scrolling: touch; overflow: auto; }
